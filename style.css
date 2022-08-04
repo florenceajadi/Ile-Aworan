@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(images/lagos2\ \(1\).jpg);
+	background-position: center;
+	background-size: cover;
+	box-sizing: border-box;
+	position: absolute;
+}
+
+.navbar{
+	height: 8%;
+	display: flex;
+	align-items: center;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li {
+	margin-right: 50px;
+}
+
+nav ul li a, nav ul li i{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	display: none;
+	margin-right: 10px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+nav ul li a{
+	margin-right: 30px
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+.col{
+	flex-basis: 50%;
+	text-align: center;
+}
+
+#col1{
+	margin-left: 60px;
+}
+
+#col2{
+	margin-right: 60px;
+}
+
+h1{
+	color: #fff;
+	font-size: 110px;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	position: static;
+}
+
+p{
+	color: #fff;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+
+}
+
+button{
+	width: 130px;
+	color: #000;
+	font-size: 20px;
+	padding: 15px 5px;
+	background: rgb(233, 130, 47);
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+
+}
+
+.buttontwo{
+	margin-left: 50px;
+}
+
+.card{
+	width: 250px;
+	height: 500px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(images/sculpture.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+@media screen and (min-width: 2300px) {
+	.card{
+		width: 1000px;
+		height: 750px;
+	}
+	h1{
+		font-size: 150px;
+	}
+	button{
+		width: 300px;
+		padding: 20px 8px;
+		font-size: 28px;
+		margin-top: 60px;
+	}
+	p{
+		font-size: 35px;
+		line-height: 60px;
+	}
+	.navbar a{
+		font-size: 30px;
+	}
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
+
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 8px;
+}
+
+.work-image {
+	margin: 60px;
+	float: left;
+	position: relative;
+
+}
+
+.workDiv{
+	background-color: #000;
+	color: #fff;
+	position: absolute;
+	width: 80%;
+	font-size: 20px;
+	left:0;
+	right:0;
+	margin-top: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 20px;
+	padding-right: 100px;
+	letter-spacing: 2px;
+}
+
+.workDiv a{
+	text-decoration: underline;
+	font-size: 25px;
+	color: #fff;
+}
+
+.workBasics{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.workInfo{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+	line-height: 35px;
+	font-size: 25px;
+}
+
+input[type=text] {
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+  }
+  
+input[type=text]:focus {
+width: 100%;
+}
+
+.input{
+	display: none;
+}
+
+.searchDiv{
+	background-color: #000;
+	color: #fff;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.searchDiv p{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 55px;
+}
+
+#searchMessage{
+	line-height: 40px;
+}
+
+.searchDiv a{
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+}
+
+.searchDiv a:hover{
+	font-weight: bold;
+} 
+
+input[type=text] {
+	width: 250px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	margin: 20px auto;
+	border-radius: 8px;
+	font-size: 17px;
+	padding-left: 9px;
+	height: 40px;
+}
+  
+input[type=text]:focus {
+	width: 40%;
+}
+
+input[type=submit]{
+	border-radius: 0 5px 5px 0;
+	padding: 9px;
+	height: 40px;
+	font-size: 17px;
+	display: none;
+}
